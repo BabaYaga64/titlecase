@@ -4,7 +4,8 @@ function titleCase(string) {
 
     for (var i = 0; i < split_words.length; i += 1) {
 
-        if (split_words[i] === "the" || split_words[i] === "a" || split_words[i] === "an" || split_words[i] === "with" || split_words[i] === "and") {
+        if (split_words[i] === "the" || split_words[i] === "a" || split_words[i] === "an" || split_words[i] === "with" || split_words[i] === "and" || split_words[i] === "but" || split_words[i] === "for" || split_words[i] === "in"
+         || split_words[i] === "of" || split_words[i] === "at" || split_words[i] === "to" || split_words[i] === "on") {
             word_list.push(split_words[i]);
         }
 
