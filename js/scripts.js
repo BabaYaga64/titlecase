@@ -22,5 +22,14 @@ function titleCase(string) {
     return final_string;
 };
 
-var string = "the the cat an a cat hat with and";
-console.log(titleCase(string));
+$(document).ready(function() {
+    $("form#title-case").submit(function(event) {
+        //Works the same way as $_GET, by retrieving form input
+        var string = $("input#input_string").val();
+        var result = titleCase(string);
+        $(".final_string").text(result);
+
+        $("#result").show();
+        event.preventDefault();
+    });
+});
