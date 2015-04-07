@@ -1,5 +1,5 @@
 function titleCase(string) {
-    var split_words = string.split(" ");
+    var split_words = string.toLowerCase().split(" ");
     var word_list = [];
 
     for (var i = 0; i < split_words.length; i += 1) {
